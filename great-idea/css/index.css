@@ -1,3 +1,219 @@
-a {
-  width: 100%;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	max-width: 900px;
+	margin: 0 auto;
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+*{
+	box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+}
+
+.logo {
+    height: 1.5rem;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-evenly;
+}
+.navigation a {
+	margin: 1rem;
+	text-decoration: none;
+	color: lightgray;
+}
+
+.head {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 4rem auto;
+	border-bottom: 1px solid black;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem 0rem 3rem 0rem;
+	font-size: 4.5rem;
+	text-align: center;
+}
+.header button {
+	width: 10rem;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0rem 0rem 4rem;
+	height: 2rem;
+	background-color: white;
+}
+.codepic {
+	height: 375px;
+	width: 375px;
+	margin-bottom: 3rem;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3rem;
+}
+.middle-img {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid black;
+}
+.bottom-content .left, .right, .middle {
+	width: 32%;
+	margin-bottom: 2rem;
+}
+
+address {
+	margin-bottom: 2rem;
+}
+.phomail p {
+	margin-bottom: 2rem;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+}
+nav a {
+	text-decoration: none;
+	color: lightgrey;
+}
+header img {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+header {
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+.service-header p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-around;
+    border-bottom: 1px solid black;
+}
+.info-box {
+    border: black 1px solid;
+    width: 48.5%;
+    padding: 1.425rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.info-box button {
+    margin: 1rem 0rem 0rem 0rem;
+    width: 8rem;
+    height: 30px;
+    background-color: ghostwhite;
+    
+}
+
+.services-facts {
+    display: flex;
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+.services-left {
+    /* padding: 1rem; */
+    margin-right: 2rem;
+    width: 49%;
+}
+.services-left p {
+    text-align: justify;
+    margin-bottom: 1rem; 
+}
+
+.services-facts img {
+    width: 49%;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.2rem;
+    line-height: 2rem;
 }
